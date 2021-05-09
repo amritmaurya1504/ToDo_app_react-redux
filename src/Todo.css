@@ -1,0 +1,115 @@
+.main_div{
+    background-color: rgb(113 222 179);
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    place-content: center;
+}
+.child_div{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    flex-direction: column;
+}
+figcaption{
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.addItems{
+    display: flex;
+}
+.addItems input{
+    border-radius: 3px;
+    border: none;
+    padding: 5px 20px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+.addItems input::placeholder{
+    color: grey;
+    font-size: 13px;
+}
+.addItems .fa{
+    margin-left: 5px;
+    background-color: black;
+    border: none;
+    color: #fff;
+    width: 30px;
+    height: 31px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.addItems .fa:hover{
+    cursor: pointer;
+    color: black;
+    background-color: #fff;
+}
+.show_list{
+    margin-top: 30px;
+}
+.eachItem{
+    background-color: #000;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    width: 215px;
+    border-radius: 3px;
+    margin-top: 10px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    transition: 0.5s;
+}
+.eachItem:hover{
+    background-color: rgb(113 222 179);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+.eachItem h3{
+    font-size: 12px;
+    font-weight: 400;
+}
+.eachItem .icon{
+    font-size: 20px;
+}
+.eachItem:hover .icon{
+    color: red;
+}
+.showList_container{
+    width: 60vw;
+    height: 65vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    padding: 10px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.showList_container::-webkit-scrollbar{
+    display: none;
+}
+.clear_button{
+    width: 100%;
+    border: none;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+.clear_button:hover{
+    background-color: red;
+    color: #fff;
+}
+
+@media(max-width:508px){
+    .showList_container{
+        width: 80vw;
+    }
+}
